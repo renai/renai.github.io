@@ -1,0 +1,1 @@
+{"name":"renai","tagline":"Mac 如何查看端口号占用情况","body":"### Mac 查看端口号占用情况\r\n打开terminal，输入<code>sudo lsof -i -P | grep -i \"listen\"</code>查看所有被占用的端口号。\r\n如果希望查看端口号8080的占用情况，使用命令<code>lsof -iTCP:8080 | grep LISTEN</code>。\r\n如果要关闭该端口可以使用<code>sudo kill 进程的PID</code>。 \r\n","google":"","note":"Don't delete this file! It's used internally to help with page regeneration."}

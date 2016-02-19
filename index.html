@@ -1,7 +1,40 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-<body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
-</body>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>renai by renai</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/github-light.css">
+    <meta name="viewport" content="width=device-width">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>renai</h1>
+        <p>Mac 如何查看端口号占用情况</p>
+
+
+        <p class="view"><a href="https://github.com/renai">View My GitHub Profile</a></p>
+
+      </header>
+      <section>
+        <h3>
+<a id="mac-查看端口号占用情况" class="anchor" href="#mac-%E6%9F%A5%E7%9C%8B%E7%AB%AF%E5%8F%A3%E5%8F%B7%E5%8D%A0%E7%94%A8%E6%83%85%E5%86%B5" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Mac 查看端口号占用情况</h3>
+
+<p>打开terminal，输入<code>sudo lsof -i -P | grep -i "listen"</code>查看所有被占用的端口号。
+如果希望查看端口号8080的占用情况，使用命令<code>lsof -iTCP:8080 | grep LISTEN</code>。
+如果要关闭该端口可以使用<code>sudo kill 进程的PID</code>。 </p>
+      </section>
+      <footer>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+    
+  </body>
 </html>
